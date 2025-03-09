@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Permanent Marker", serif;
+    background-image: linear-gradient(90deg  ,rgb(0, 70, 110) , rgb(0, 110, 70));
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23000000" stroke="%23545454" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>') , auto ;
+  } 
+  a{
+    text-decoration: none;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23FDFDFD" stroke="%232F2F2F" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>') , pointer;
+  }
+  .sidebar-title{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #000;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+  }
+  .logo{
+      color: white;
+      font-size: 38px;
+  }
+  .li{
+      margin-top: 30px;
+  }
+  .li1{
+      margin-left: 5%;
+  }
+  .li2{
+      margin-top: 23px;
+  }
+  .li3{
+      margin-right: 5%;
+  }
+  .docs-button {
+      padding: 18px 35px;
+      border: #007653 2px solid;
+      border-radius: 30px;
+      color: #000;
+      transition: 0.2s all ease-in-out;
+  }
+  .docs-button:hover{
+      background-color:  #007653 ;
+      color: #fff;
+  }
+  .download-button{
+      padding: 18px 35px;
+      border: #0072b4 2px solid;
+      border-radius: 30px;
+      color: #000;
+      transition: 0.2s all ease-in-out;
+  }
+  .download-button:hover{
+    background-color:  #0072b4 ;
+    color: #fff;
+  }
+  nav{
+    background-color: rgba(73, 73, 73, 0.315);
+    width: fit-content;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 100px;
+    overflow-y: scroll;
+    height: 90%;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  nav li{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    color: rgba(50, 50, 50, 0.9);
+  }
+  nav a:hover{
+    color: black;  
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 100px; 
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 80%;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+    nav{
+      overflow-y: hidden;
+      height: auto;
+    }
+    nav li{
+      margin-bottom: 20px;
+    }
+    svg{
+      margin-top: 20px;
+    }
+  }

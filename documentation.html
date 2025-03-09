@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/documentation.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <div class="nav">
+    <div class="li li1">
+        <a href="docs.html" class="docs-button">Documentation <i class="fa-solid fa-book"></i></a>
+    </div>
+    <div class="li li2">
+        <h1 class="logo">Logo</h1>
+    </div>
+    <div class="li li3">
+        <a download="" href="css/styles.css" class="download-button">Download <i class="fa-solid fa-download"></i></a>
+    </div>
+  </div>
+  <!-- Navbar End -->
+  <!-- Sidebar Start -->
+  <nav>
+    <ul class="sidebar">
+      <li class="menu-button1" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a class="sidebar-title" href="#">Get started</a></li>
+      <li><a href="#">installation</a></li>
+      <li><a class="sidebar-title" href="#">Layout</a></li>
+      <li><a href="#">aspect-ratio</a></li>
+      <li><a href="#">box-sizing</a></li>
+      <li><a href="#">display</a></li>
+      <li><a href="#">position</a></li>
+      <li><a href="#">top-right-bottom-left</a></li>
+      <li><a href="#">isolation</a></li>
+      <li><a href="#">object-fit</a></li>
+      <li><a href="#">overflow</a></li>
+      <li><a href="#">float</a></li>
+      <li><a href="#">clear</a></li>
+      <li><a href="#">z-index</a></li>
+      <li><a class="sidebar-title" href="#">Flexbox</a></li>
+      <li><a href="#">flex-basis</a></li>
+      <li><a href="#">flex-direction</a></li>
+      <li><a href="#">flex-wrap</a></li>
+      <li><a href="#">flex-shorthand</a></li>
+      <li><a href="#">order</a></li>
+      <li><a href="#">justify-content</a></li>
+      <li><a href="#">justify-items</a></li>
+      <li><a href="#">justify-self</a></li>
+      <li><a href="#">align-content</a></li>
+      <li><a href="#">align-items</a></li>
+      <li><a href="#">align-self</a></li>
+      <li><a href="#">place-content</a></li>
+      <li><a href="#">place-items</a></li>
+      <li><a href="#">place-self</a></li>
+      <li><a class="sidebar-title" href="#">Spacing & Sizing</a></li>
+      <li><a href="#">padding</a></li>
+      <li><a href="#">margin</a></li>
+      <li><a href="#">gap</a></li>
+      <li><a href="#">width</a></li>
+      <li><a href="#">min-width</a></li>
+      <li><a href="#">max-width</a></li>
+      <li><a href="#">height</a></li>
+      <li><a href="#">min-height</a></li>
+      <li><a href="#">max-height</a></li>
+      <li><a href="#">square</a></li>
+      <li><a class="sidebar-title" href="#">Typography</a></li>
+      <li><a href="#">font-family</a></li>
+      <li><a href="#">font-size</a></li>
+      <li><a href="#">font-style</a></li>
+      <li><a href="#">font-weight</a></li>
+      <li><a href="#">font-variant-numeric</a></li>
+      <li><a href="#">letter-spacing</a></li>
+      <li><a href="#">line-height</a></li>
+      <li><a href="#">list-style-position</a></li>
+      <li><a href="#">list-style-type</a></li>
+      <li><a href="#">text-align</a></li>
+      <li><a href="#">underline-offset</a></li>
+      <li><a href="#">text-transform</a></li>
+      <li><a href="#">text-overflow</a></li>
+      <li><a href="#">text-wrap</a></li>
+      <li><a href="#">text-indent</a></li>
+      <li><a href="#">vertical-align</a></li>
+      <li><a href="#">white-space</a></li>
+      <li><a href="#">word-break</a></li>
+      <li><a href="#">text-decoration-thickness</a></li>
+      <li><a href="#">text-decoration-style</a></li>
+      <li><a href="#">text-decoration-line</a></li>
+      <li><a href="#">text-decoration-color</a></li>
+      <li><a href="#">color</a></li>
+
+
+    </ul>
+    <ul>
+      <li class="hideOnMobile"><a class="sidebar-title" href="#">Get started</a></li>
+      <li class="hideOnMobile"><a href="#">installation</a></li>
+      <li class="hideOnMobile"><a class="sidebar-title" href="#">Layout</a></li>
+      <li class="hideOnMobile"><a href="#">aspect-ratio</a></li>
+      <li class="hideOnMobile"><a href="#">box-sizing</a></li>
+      <li class="hideOnMobile"><a href="#">display</a></li>
+      <li class="hideOnMobile"><a href="#">position</a></li>
+      <li class="hideOnMobile"><a href="#">top-right-bottom-left</a></li>
+      <li class="hideOnMobile"><a href="#">isolation</a></li>
+      <li class="hideOnMobile"><a href="#">object-fit</a></li>
+      <li class="hideOnMobile"><a href="#">overflow</a></li>
+      <li class="hideOnMobile"><a href="#">float</a></li>
+      <li class="hideOnMobile"><a href="#">clear</a></li>
+      <li class="hideOnMobile"><a href="#">z-index</a></li>
+      <li class="hideOnMobile"><a class="sidebar-title" href="#">Flexbox</a></li>
+      <li class="hideOnMobile"><a href="#">flex-basis</a></li>
+      <li class="hideOnMobile"><a href="#">flex-direction</a></li>
+      <li class="hideOnMobile"><a href="#">flex-wrap</a></li>
+      <li class="hideOnMobile"><a href="#">flex-shorthand</a></li>
+      <li class="hideOnMobile"><a href="#">order</a></li>
+      <li class="hideOnMobile"><a href="#">justify-content</a></li>
+      <li class="hideOnMobile"><a href="#">justify-items</a></li>
+      <li class="hideOnMobile"><a href="#">justify-self</a></li>
+      <li class="hideOnMobile"><a href="#">align-content</a></li>
+      <li class="hideOnMobile"><a href="#">align-items</a></li>
+      <li class="hideOnMobile"><a href="#">align-self</a></li>
+      <li class="hideOnMobile"><a href="#">place-content</a></li>
+      <li class="hideOnMobile"><a href="#">place-items</a></li>
+      <li class="hideOnMobile"><a href="#">place-self</a></li>
+      <li class="hideOnMobile"><a class="sidebar-title" href="#">Spacing & Sizing</a></li>
+      <li class="hideOnMobile"><a href="#">padding</a></li>
+      <li class="hideOnMobile"><a href="#">margin</a></li>
+      <li class="hideOnMobile"><a href="#">gap</a></li>
+      <li class="hideOnMobile"><a href="#">width</a></li>
+      <li class="hideOnMobile"><a href="#">min-width</a></li>
+      <li class="hideOnMobile"><a href="#">max-width</a></li>
+      <li class="hideOnMobile"><a href="#">height</a></li>
+      <li class="hideOnMobile"><a href="#">min-height</a></li>
+      <li class="hideOnMobile"><a href="#">max-height</a></li>
+      <li class="hideOnMobile"><a href="#">square</a></li>
+      <li class="hideOnMobile"><a class="sidebar-title" href="#">Typography</a></li>
+      <li class="hideOnMobile"><a href="#">font-family</a></li>
+      <li class="hideOnMobile"><a href="#">font-size</a></li>
+      <li class="hideOnMobile"><a href="#">font-style</a></li>
+      <li class="hideOnMobile"><a href="#">font-weight</a></li>
+      <li class="hideOnMobile"><a href="#">font-variant-numeric</a></li>
+      <li class="hideOnMobile"><a href="#">letter-spacing</a></li>
+      <li class="hideOnMobile"><a href="#">line-height</a></li>
+      <li class="hideOnMobile"><a href="#">list-style-position</a></li>
+      <li class="hideOnMobile"><a href="#">list-style-type</a></li>
+      <li class="hideOnMobile"><a href="#">text-align</a></li>
+      <li class="hideOnMobile"><a href="#">underline-offset</a></li>
+      <li class="hideOnMobile"><a href="#">text-transform</a></li>
+      <li class="hideOnMobile"><a href="#">text-overflow</a></li>
+      <li class="hideOnMobile"><a href="#">text-wrap</a></li>
+      <li class="hideOnMobile"><a href="#">text-indent</a></li>
+      <li class="hideOnMobile"><a href="#">vertical-align</a></li>
+      <li class="hideOnMobile"><a href="#">white-space</a></li>
+      <li class="hideOnMobile"><a href="#">word-break</a></li>
+      <li class="hideOnMobile"><a href="#">hyphens</a></li>
+      <li class="hideOnMobile"><a href="#">text-decoration-thickness</a></li>
+      <li class="hideOnMobile"><a href="#">text-decoration-style</a></li>
+      <li class="hideOnMobile"><a href="#">text-decoration-line</a></li>
+      <li class="hideOnMobile"><a href="#">text-decoration-color</a></li>
+      <li class="hideOnMobile"><a href="#">color</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <!-- Sidebar End -->
+
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
