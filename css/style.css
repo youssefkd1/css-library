@@ -16,11 +16,77 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
 }
+.jq{
+    margin-top: 15px;
+    width:fit-content;
+    padding:7px;
+    background-color: green;
+    text-align: center;
+    color:white
+}
+.notify{
+    background-color: green;
+    color: white;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+    position: fixed;
+    right: -100%;
+    top: 15%;
+}
+.scroll-indicator {
+    width: 100%;
+    height: 10px;
+    background: #212c33;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: visible;
+}
+.progress {
+    width: 0%;
+    height: 10px;
+    background-image: linear-gradient( 90deg, rgb(150, 255, 0) ,rgb(0, 255, 0));
+}
+.scrollToTopBtn {
+    background-color: rgb(115, 255, 0);
+    border: 2px solid rgb(115, 255, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    border-radius: 1000px;
+    transition: all 0.5s ease;
+}
+.scrollToTopBtn:hover{
+    background-color: transparent;
+}
+.scrollToTopBtn:hover i{
+    color: rgb(115, 255, 0);
+}
+.scrollToTopBtn i {
+    color: #172127;
+    font-size: 25px;
+}
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
 .nav{
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    width: 100%;
     top: -100px;
+    z-index: 10000000000000000;
 }
 .logo{
     color: white;
@@ -40,13 +106,13 @@ body{
 }
 .docs-button , .download-button{
     padding: 18px 35px;
-    border: #10bbff 2px solid;
+    border: #0072b4 2px solid;
     border-radius: 30px;
     color: #fff;
     transition: 0.2s all ease-in-out;
 }
 .docs-button:hover , .download-button:hover{
-    background-color:  #10bbff ;
+    background-color:  #0072b4 ;
     color: #fff;
 }
 .hero{
@@ -71,7 +137,7 @@ body{
 .hero-note{
     font-size: 25px;
     border-radius: 12px;
-    background-color: rgba(0, 185, 252, 0.611);
+    background-color: #0072b4;
     width: 360px;
     margin: auto;
     margin-top: 20px;
@@ -83,11 +149,10 @@ body{
 }
 .hero-note-span{
     color: red;
-    
 }
 .hero-button-start , .hero-button-download{
     padding: 18px 35px;
-    border: #10bbff 2px solid;
+    border: #0072b4 2px solid;
     border-radius: 50px;
     color: #fff;
     transition: 0.2s all ease-in-out;
@@ -101,7 +166,7 @@ body{
     right: 1500px;
 }
 .hero-button-download:hover , .hero-button-start:hover{
-    background-color:  #10bbff ;
+    background-color:  #0072b4 ;
     color: #fff;
     box-shadow: 0 3px 10px rgb(58, 58, 58);
 }
@@ -325,26 +390,6 @@ body{
     font-size: 12px;
     white-space: nowrap;
 }
-.jq{
-    margin-top: 15px;
-    width:fit-content;
-    padding:7px;
-    background-color: green;
-    text-align: center;
-    color:white
-}
-
-.notify{
-    background-color: green;
-    color: white;
-    width: fit-content;
-    padding: 4px 12px;
-    border-radius: 4px;
-    position: fixed;
-    right: -100%;
-    top: 100px;
-    font-family: arial;
-}
 .carousel-container{
     position: relative;
 }
@@ -430,7 +475,7 @@ footer{
     font-size: 24px;
 }
 .footer-text2 span{
-    color: #10bbff;
+    color: #0072b4;
 }
 @keyframes glow{
     0%{

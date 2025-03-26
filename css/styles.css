@@ -9126,19 +9126,19 @@
    }
    /* negative z-index */
    .negative-z-1{
-    z-index: 1;
+    z-index: -1;
    }
    .negative-z-5{
-    z-index: 5;
+    z-index: -5;
    }
    .negative-z-10{
-    z-index: 10;
+    z-index: -10;
    }
    .negative-z-15{
-    z-index: 15;
+    z-index: -15;
    }
    .negative-z-20{
-    z-index: 20;
+    z-index: -20;
    }
 
    /* position type */
@@ -9238,28 +9238,28 @@
     overflow: scroll;
    }
    .overflow-x-auto{
-    overflow: auto;
+    overflow-x: auto;
    }
    .overflow-x-hidden{
-    overflow: hidden;
+    overflow-x: hidden;
    }
    .overflow-x-visible{
-    overflow: visible;
+    overflow-x: visible;
    }
    .overflow-x-scroll{
-    overflow: scroll;
+    overflow-x: scroll;
    }
    .overflow-y-auto{
-    overflow: auto;
+    overflow-y: auto;
    }
    .overflow-y-hidden{
-    overflow: hidden;
+    overflow-y: hidden;
    }
    .overflow-y-visible{
-    overflow: visible;
+    overflow-y: visible;
    }
    .overflow-y-scroll{
-    overflow: scroll;
+    overflow-y: scroll;
    
    }
    /* float */
@@ -11342,8 +11342,7 @@
 .cursor-zoom-out{
   cursor: zoom-out;
 }
-/* 
- */
+/* order */
 .order-0{
   order: 0;
 }
@@ -12546,7 +12545,7 @@
     bottom: 400px;
   }
   
-  /* margin from top */
+  /* position from top */
   .t-0{
     top: 0;
   }
@@ -13344,7 +13343,7 @@
   }
   .x-9-x2{
     left: 36px;
-    right: 1836px;
+    right: 36px;
   }
   .x-10-x2{
     left: 40px;
@@ -13432,19 +13431,19 @@
   }
   .x-31-x2{
     left: 168px;
-    right: 84px;
-  }
-  .x-32-x2{
-    left: 168px;
     right: 168px;
   }
-  .x-33-x2{
+  .x-32-x2{
     left: 176px;
     right: 176px;
   }
-  .x-34-x2{
+  .x-33-x2{
     left: 184px;
     right: 184px;
+  }
+  .x-34-x2{
+    left: 192px;
+    right: 192px;
   }
   .x-35-x2{
     left: 200px;
@@ -13539,7 +13538,7 @@
     right: 600px;
   }
   .x-58-x2{
-    left: 640px;
+    left: 460px;
     right: 460px;
   }
   .x-59-x2{
@@ -15137,6 +15136,9 @@
     /* isolation end */
 
     /* aspect ratio start */
+    .a-16_9{
+      aspect-ratio: 16/9;
+    }
     .a-1_1{
       aspect-ratio: 1/1;
     }
@@ -15609,10 +15611,10 @@
     flex-basis: 200px;
   }
   .basis-36-x2{
-    flex-basis: 106px;
+    flex-basis: 212px;
   }
   .basis-37-x2{
-    flex-basis: 212px;
+    flex-basis: 224px;
   }
   .basis-38-x2{
     flex-basis: 236px;
@@ -15633,7 +15635,7 @@
     flex-basis: 296px;
   }
   .basis-44-x2{
-    flex-basis: 302px;
+    flex-basis: 308px;
   }
   .basis-45-x2{
     flex-basis: 320px;
